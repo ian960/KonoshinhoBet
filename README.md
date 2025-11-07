@@ -121,14 +121,6 @@ Números pares → x2
 Animação de giro com cubic-bezier
 
 
-Melhorias Futuras (Sugestões)
-
- Corrigir nome GolderDice.tsx → GoldenDice.tsx
- Compartilhar créditos entre jogos (estado global com Context ou Zustand)
- Sons de cassino (vitória, giro, dados)
- Histórico de jogadas
- Modo tela cheia para jogos
- Responsividade mobile aprimorada
- Persistência com localStorage
+ 
 
  
