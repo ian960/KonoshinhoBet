@@ -1,0 +1,165 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at top, #1a0000 0%, #000 100%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: rgba(30, 0, 0, 0.8);
+  border-bottom: 2px solid #ffd700;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0 15px #b30000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ff0000;
+}
+
+/* Hero (banner principal) */
+.hero {
+  flex: 1;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: url('./assets/casino-bg.jfif') center/cover no-repeat;
+  border-bottom: 2px solid #ffd700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ocupa a tela inteira */
+  background-attachment: scroll; /* evita bug de corte */
+  background-color: #1a0000;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 0 0 20px #ff0000, 0 0 30px #ffd700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.cta {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: #b30000;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.cta:hover {
+  background: #ff3333;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd700;
+}
+
+/* Showcase de jogos */
+.game-showcase {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle at center, #2a0000, #000);
+  flex: 1;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #b30000;
+}
+
+.game-showcase h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.games-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.game-card {
+  background: rgba(255, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 200px;
+  transition: 0.3s;
+  border: 1px solid #ffd700;
+  box-shadow: 0 0 10px #660000;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ffd700;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #4d0000, #1a0000);
+  border-top: 2px solid #ffd700;
+  font-size: 0.9rem;
+  color: #ccc;
+  width: 100%;
+  margin-top: auto;
+  box-shadow: 0 -2px 20px #660000;
+}
+
+.footer p {
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff0000;
+}
