@@ -36,13 +36,6 @@ Tudo construído com **React + TypeScript**, estilizado com **CSS puro** e efeit
 
 ---
 
-  
-
-
-> **Nota**: O arquivo `GolderDice.tsx` tem um **erro de digitação** no nome. Recomenda-se renomear para `GoldenDice.tsx` e atualizar a importação em `App.tsx`.
-
----
-
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
