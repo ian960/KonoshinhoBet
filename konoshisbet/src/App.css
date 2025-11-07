@@ -404,3 +404,192 @@ nav a:hover {
   from { transform: translateY(50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+.wallet-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.wallet-modal {
+  background: #111;
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  min-width: 520px;
+  max-width: 600px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.wallet-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+
+.wallet-info {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.wallet-info p {
+  margin: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.status {
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.status.ativo {
+  background: green;
+  color: white;
+}
+
+.wallet-balance {
+  margin-top: 1rem;
+}
+
+.balance {
+  font-size: 2rem;
+  font-weight: bold;
+  color: gold;
+}
+
+.wallet-actions {
+  margin-top: 1rem;
+}
+
+.wallet-actions button {
+  margin: 0.5rem;
+  background: gold;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.wallet-actions button:hover {
+  background: #ffdf00;
+  transform: scale(1.05);
+}
+
+.wallet-history {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.wallet-history h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: gold;
+  margin-bottom: 0.5rem;
+}
+
+.wallet-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wallet-history li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.close-btn {
+  margin-top: 1.5rem;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.close-btn:hover {
+  background: red;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+.payment-methods {
+  margin: 16px 0;
+}
+
+.payment-label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.payment-options {
+  display: flex;
+  gap: 16px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 2px solid #a00;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #b71c1c; /* Vermelho escuro (Material Design) */
+  color: white;
+  font-weight: 500;
+}
+
+.payment-option input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Estado selecionado: vermelho ainda mais escuro com borda destacada */
+.payment-option.selected {
+  border-color: #8b0000;
+  background-color: #8b0000; /* Vermelho escuro intenso */
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0 0 2px rgba(183, 28, 28, 0.3);
+}
+
+/* Hover: um pouco mais claro, mas ainda vermelho escuro */
+.payment-option:hover:not(.selected) {
+  background-color: #c21807;
+  border-color: #d32f2f;
+  color: white;
+}
