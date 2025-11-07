@@ -1,6 +1,5 @@
 # Supreme Casino – Demo de Jogos de Cassino em React + TypeScript
-
-![Supreme Casino Preview](https://via.placeholder.com/1200x600/1a0000/ffd700?text=Supreme+Cassino+Demo)
+ 
 
 Um **projeto demo interativo** de um cassino online com três jogos totalmente funcionais:
 
@@ -38,3 +37,98 @@ Tudo construído com **React + TypeScript**, estilizado com **CSS puro** e efeit
 ---
 
 ## Estrutura do Projeto
+
+src/
+├── components/
+│   ├── Footer.tsx
+│   ├── GameShowcase.tsx
+│   ├── GolderDice.tsx          
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── RouletteRoyale.tsx
+│   └── SlotMachine.tsx
+├── App.tsx
+├── App.css
+├── index.css
+└── main.tsx
+
+
+> **Nota**: O arquivo `GolderDice.tsx` tem um **erro de digitação** no nome. Recomenda-se renomear para `GoldenDice.tsx` e atualizar a importação em `App.tsx`.
+
+---
+
+## Como Rodar o Projeto
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/) (v18+ recomendado)
+- npm, yarn ou pnpm
+
+### Passos
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/seu-usuario/supreme-casino.git
+cd supreme-casino
+
+# 2. Instale as dependências
+npm install
+# ou
+yarn
+# ou
+pnpm install
+
+# 3. Inicie o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+
+Acesse em: http://localhost:5173
+
+Jogos Disponíveis
+1. Slot Machine
+
+3 rolos com 7 símbolos
+Regras:
+
+3 iguais → x10 (ou x20 para 💎, x50 para 7️⃣)
+2 iguais → x2
+
+Animação fluida com setInterval
+
+2. Golden Dice
+
+Dado de 1 a 6
+Regras:
+
+6 → Jackpot x8
+4 ou 5 → x3
+1, 2, 3 → perda
+
+Efeito de rolagem com setTimeout
+
+3. Roulette Royale
+
+Roleta de 0 a 36
+Regras:
+
+0 → Jackpot x15
+Números pares → x2
+Ímpares → perda
+
+Animação de giro com cubic-bezier
+
+
+Melhorias Futuras (Sugestões)
+
+ Corrigir nome GolderDice.tsx → GoldenDice.tsx
+ Compartilhar créditos entre jogos (estado global com Context ou Zustand)
+ Sons de cassino (vitória, giro, dados)
+ Histórico de jogadas
+ Modo tela cheia para jogos
+ Responsividade mobile aprimorada
+ Persistência com localStorage
+
+ 
