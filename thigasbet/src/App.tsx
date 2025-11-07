@@ -9,6 +9,7 @@ import SlotMachine from "./components/SlotMachine";
 import GoldenDice from "./components/GolderDice";
 import RouletteRoyale from "./components/RouletteRoyale";
 import LoginModal from "./components/LoginModal";
+import Mines from "./components/Mines"; // 👈 novo import
 
 function App() {
   const [selectedGame, setSelectedGame] = useState<string | null>(null);
@@ -47,9 +48,11 @@ function App() {
       <Hero />
       <GameShowcase onSelectGame={handleSelectGame} selectedGame={selectedGame} />
 
+      {/* Jogos exibidos conforme a seleção */}
       {selectedGame === "Slot Machine" && <SlotMachine />}
       {selectedGame === "Golden Dice" && <GoldenDice />}
       {selectedGame === "Roulette Royale" && <RouletteRoyale />}
+      {selectedGame === "Mines" && <Mines />} {/* 👈 novo jogo adicionado */}
 
       <Footer />
 

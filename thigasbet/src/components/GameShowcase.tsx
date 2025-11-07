@@ -7,15 +7,19 @@ export default function GameShowcase({ onSelectGame, selectedGame }: GameShowcas
   const games = [
     {
       name: "Slot Machine",
-      img: "https://as1.ftcdn.net/v2/jpg/02/14/07/76/1000_F_214077691_8OCmrKTMw4BgDR6i4YDJO1lGvSr2RuGQ.jpg",
+      img: "https://png.pngtree.com/png-clipart/20241115/original/pngtree-luck-in-a-lever-traditional-slot-machine-design-png-image_17089875.png",
     },
     {
       name: "Golden Dice",
-      img: "https://cdn-icons-png.flaticon.com/512/1179/1179069.png",
+      img: "https://www.pngall.com/wp-content/uploads/2016/04/Dice-PNG.png",
     },
     {
       name: "Roulette Royale",
-      img: "https://cdn-icons-png.flaticon.com/512/1166/1166970.png",
+      img: "https://images.vexels.com/media/users/3/151205/isolated/preview/8857efb275fbf2435db40a222d05b1e6-icone-da-roda-de-roleta.png",
+    },
+    {
+      name: "Mines",
+      img: "https://em-content.zobj.net/source/emojidex/112/bomb_1f4a3.png",
     },
   ];
 
@@ -32,13 +36,26 @@ export default function GameShowcase({ onSelectGame, selectedGame }: GameShowcas
               cursor: "pointer",
               border: selectedGame === g.name ? "2px solid gold" : "2px solid transparent",
               transition: "border 0.3s",
+              padding: "1rem",
+              borderRadius: 10,
+              background: "rgba(255,255,255,0.05)",
             }}
           >
-            <img src={g.img} alt={g.name} />
-            <h4>{g.name}</h4>
+            <img
+              src={g.img}
+              alt={g.name}
+              style={{
+                width: 80, // 👈 tamanho reduzido
+                height: 80,
+                objectFit: "contain",
+                marginBottom: 8,
+              }}
+            />
+            <h4 style={{ fontSize: 16 }}>{g.name}</h4>
           </div>
         ))}
       </div>
     </section>
   );
 }
+
